@@ -12,6 +12,7 @@
 		C2534F7D1DAFF53200056857 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2534F7B1DAFF53200056857 /* Main.storyboard */; };
 		C2534F7F1DAFF53200056857 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2534F7E1DAFF53200056857 /* Assets.xcassets */; };
 		C2534F821DAFF53200056857 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2534F801DAFF53200056857 /* LaunchScreen.storyboard */; };
+		C2534F8B1DAFF54D00056857 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2534F8A1DAFF54D00056857 /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		C2534F7E1DAFF53200056857 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C2534F811DAFF53200056857 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C2534F831DAFF53200056857 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2534F8A1DAFF54D00056857 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2534F8B1DAFF54D00056857 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +43,7 @@
 			children = (
 				C2534F761DAFF53200056857 /* WKWebViewSample */,
 				C2534F751DAFF53200056857 /* Products */,
+				C2534F891DAFF54D00056857 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +66,14 @@
 				C2534F831DAFF53200056857 /* Info.plist */,
 			);
 			path = WKWebViewSample;
+			sourceTree = "<group>";
+		};
+		C2534F891DAFF54D00056857 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C2534F8A1DAFF54D00056857 /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +271,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WKWebViewSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.project-unknown.WKWebViewSample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -271,6 +284,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WKWebViewSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.project-unknown.WKWebViewSample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
